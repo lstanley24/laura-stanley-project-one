@@ -50,17 +50,10 @@ figure {
     left:0;
 }
 
-
 h2 {
     font-family: 'Nova Flat', cursive;
     font-size: 2.5rem;
     color: #186684;
-}
-
-.contact-text h2 {
-    font-family: 'Nova Flat', cursive;
-    font-size: 2.5rem;
-    color: #E85B26;
 }
 
 p {
@@ -70,20 +63,13 @@ p {
     color: #1F2022;
 }
 
-footer p {
-    font-family: 'Nova Flat', cursive;
-    font-size: 2rem;
-    line-height: 2.9rem;
-    color: #F4F4F4;
-}
-
 .wrapper {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
 }
 
-/* header styles */
+/* HEADER STYLES */
 
 header {
     background-image: url(./assets/image-1@2x.png);
@@ -95,12 +81,12 @@ header {
 
 header nav {
     text-align: center;
+    padding-top: 50px;
 }
 
 header li {
     display: inline-block;
     margin: 0 20px;
-    /* padding-top: 25px; */
 }
 
 header a {
@@ -118,7 +104,7 @@ header a:focus {
 .heading-container {
     width: 60%;
     float: right;
-    margin-top: 300px;
+    margin-top: 250px;
 }   
 
 h1 {
@@ -128,6 +114,28 @@ h1 {
     background-color: #E3E4EA89;
     width: 380px;
 }
+
+h2 {
+    padding-bottom: 25px
+}
+
+section p {
+    padding-bottom: 35px;
+}
+
+.giving-back-text a,
+.foot-care-text a,
+.specialize-text a {
+    font-family: 'Nova Flat', cursive;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    text-transform: uppercase;
+    color: #186684;
+    padding: 10px 25px;
+    border: 3px solid #E85B26;
+}
+
+/* SOCIAL ICONS */
 
 .social-icons {
     margin: 225px auto;
@@ -145,71 +153,200 @@ h1 {
     color:#E85B26;
 }
 
-.section-1 {
-    max-height: 50vh;
-
-}
-
-.section-1 a {
-    font-family: 'Nova Flat', cursive;
-    font-size: 1.8rem;
-    line-height: 2.9rem;
-    padding: 15px 30px;
-    border: 3px solid #E85B26;
-}
-
-
-
-
-.specialize-img {
-    float: right;
-    width: 50%;
-    position: relative;
-    top: -442px;
-}    
+/* SPECIALIZE SECTION */
 
 .specialize-text {
     float: left;
+    padding: 120px 0px 120px 0;
+    margin: 0 50px 0 100px;
+    width: calc(50% - 150px);
+}
+
+.specialize-img {
+    float: left;
     width: 50%;
-    padding: 120px 50px 120px 0;
-}
-
-.specialize-text h2,
-.foot-care-text h2  {
-    padding-bottom: 25px
-}
-
-.specialize-text p,
-.foot-care-text p {
-    padding-bottom: 35px;
-}
-
-.foot-care-text {
-    float: right;
-    padding-left: 50px;
-    width: calc(50% - 50px);
-    position: relative;
-    top: -245px;
-}
+    max-height: 50%;
+}    
 
 .foot-care-img {
     float: left;
     width: 50%;
+}    
+
+.foot-care-text {
+    float: left;
+    padding: 120px 0 120px 0;
+    margin: 0 50px 0 100px;
+    width: calc(50% - 150px);
+}
+
+/* GIVING BACK STYLES */
+
+.giving-back {
+    background-color: #F4F4F4;
+    padding: 80px 0 80px 0;
+}
+
+.giving-back figure {
+    float: left;
+    margin-right: 30px;
+    width: calc(30% - 30px);
+}
+
+.giving-back-text {
+    width: 70%;
+    float: right;
+    margin-top: 40px;
+}
+
+/* CONNECT WITH US SECTION */
+
+.connect-with-us {
+    background-image: url(./assets/image-5@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.icon-menu {
+    background-color: #F4F4F4;
+    width: 500px;
+    padding: 50px 35px 50px 35px;
     position: relative;
-    top: 97px;
+    top: 100px;
+    left: 500px;
 }
 
-
-
-
-
-
-
-
-
-.secondary-menu i {
+.icon-menu li {
     font-size: 2rem;
+    font-family: 'Catamaran', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    margin-right: 100px;
 }
+
+.icon-menu i {
+    font-size: 3rem;
+    color: #E85B26;
+    padding-bottom: 25px;
+}
+
+.shopping-bag,
+.community,
+.phone {
+    float: left;
+    width: calc((100% - 300px) / 3);
+    text-align: center;
+
+}
+
+/* PHOTO GALLERY STYLES */
+
+.photo-gallery h2 {
+    text-align: center;
+    margin: 50px 0 50px 0;
+}
+
+.photo-gallery li {
+    margin-right: 20px;
+    float: left;
+    width: calc((100% - 60px) / 3);
+    padding-bottom: 80px;
+
+}
+
+/* CONTACT SECTION */
+
+.contact-text h2 {
+    font-family: 'Nova Flat', cursive;
+    font-size: 2.5rem;
+    color: #E85B26;
+}
+
+.contact-section {
+    background-color: #F4F4F4;
+}
+
+.secondary-menu ul {
+    text-align: center;
+}
+
+.secondary-menu li {
+    display: inline-block;
+    margin: 0 20px;
+    padding-top: 45px;
+}
+
+.secondary-menu a {
+    font-family: 'Nova Flat', cursive;
+    font-style: 2rem;
+    line-height: 2.9rem;
+    text-align: center;
+}
+
+.contact-section {
+    padding-bottom: 50px;
+}
+
+.contact-section h2 {
+    padding-bottom: 10px;
+    font-style: 1.5rem;
+}
+
+.contact-col-1 p {
+    padding: 0;
+}
+
+.contact-col-1 {
+    float: left;
+    padding-top: 25px;
+}
+
+.contact-col-2 {
+    float: right;
+    width: calc(50% - 6px);
+    padding-top: 25px;
+}
+
+.email-placeholder {
+    text-transform: lowercase;
+    background-color: white;
+    padding: 10px 360px 10px 10px;
+    display: inline-block;
+}
+
+.subscribe a {
+    float: right;
+}
+.contact-col-2 a {
+    font-family: 'Nova Flat', cursive;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    text-transform: uppercase;
+    padding: 7px 20px;
+    background-color: #186684;
+    border: 3px solid #186684;
+    color: white;
+}
+
+.contact-col-2 a:hover,
+.contact-col-2 a:focus {
+    font-family: 'Nova Flat', cursive;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    padding: 15px 30px;
+    background-color: #186684;
+    border: 3px solid #E85B26;
+    color: white;
+}
+
+.contact-col-2 p {
+    padding-bottom: 10px;
+}
+
+/* FOOTER STYLES */
 
 footer {
     background-color: #1f2022;
@@ -221,5 +358,12 @@ footer {
 footer a:hover,
 footer a:focus {
     color: #E85B26;
-
 }
+
+footer p {
+    font-family: 'Nova Flat', cursive;
+    font-size: 2rem;
+    line-height: 2.9rem;
+    color: #F4F4F4;
+}
+
