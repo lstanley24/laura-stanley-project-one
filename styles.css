@@ -50,6 +50,14 @@ figure {
     left:0;
 }
 
+header i {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 2rem;
+    visibility: hidden;
+}
+
 h2 {
     font-family: 'Nova Flat', cursive;
     font-size: 2.5rem;
@@ -132,13 +140,14 @@ section p {
     text-transform: uppercase;
     color: #186684;
     padding: 10px 25px;
+    margin: 0;
     border: 3px solid #E85B26;
 }
 
 /* SOCIAL ICONS */
 
 .social-icons {
-    margin: 225px auto;
+    padding-top: 150px;
     float: right;
 }
 
@@ -153,11 +162,13 @@ section p {
     color:#E85B26;
 }
 
+
 /* SPECIALIZE SECTION */
 
-.specialize-text {
+.specialize-text,
+.foot-care-text {
     float: left;
-    padding: 120px 0px 120px 0;
+    padding-top: 120px;
     margin: 0 50px 0 100px;
     width: calc(50% - 150px);
 }
@@ -165,20 +176,12 @@ section p {
 .specialize-img {
     float: left;
     width: 50%;
-    max-height: 50%;
 }    
 
 .foot-care-img {
     float: left;
     width: 50%;
 }    
-
-.foot-care-text {
-    float: left;
-    padding: 120px 0 120px 0;
-    margin: 0 50px 0 100px;
-    width: calc(50% - 150px);
-}
 
 /* GIVING BACK STYLES */
 
@@ -205,40 +208,39 @@ section p {
     background-image: url(./assets/image-5@2x.png);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 50vh;
-    background-size: cover;
     background-position: center;
+    height: 50vh;
 }
 
 .icon-menu {
     background-color: #F4F4F4;
-    width: 500px;
-    padding: 50px 35px 50px 35px;
+    padding: 50px 0 50px 0;
     position: relative;
-    top: 100px;
-    left: 500px;
+    left: 300px;
+    top: 90px;
+    display: inline;
 }
 
-.icon-menu li {
+.icon-menu a {
     font-size: 2rem;
     font-family: 'Catamaran', sans-serif;
     text-align: center;
     font-weight: 600;
-    margin-right: 100px;
+    margin: 0 20px;
+    display: inline-block;
 }
 
 .icon-menu i {
     font-size: 3rem;
     color: #E85B26;
     padding-bottom: 25px;
+    text-align: center;
+    display: inline-block
 }
 
-.shopping-bag,
-.community,
-.phone {
-    float: left;
-    width: calc((100% - 300px) / 3);
-    text-align: center;
+.shopping-bag {
+    width: 50px;
+
 
 }
 
@@ -254,10 +256,9 @@ section p {
     float: left;
     width: calc((100% - 60px) / 3);
     padding-bottom: 80px;
-
 }
 
-/* CONTACT SECTION */
+/* FOOTER STYLES */
 
 .contact-text h2 {
     font-family: 'Nova Flat', cursive;
@@ -281,7 +282,7 @@ section p {
 
 .secondary-menu a {
     font-family: 'Nova Flat', cursive;
-    font-style: 2rem;
+    font-style: 2.5rem;
     line-height: 2.9rem;
     text-align: center;
 }
@@ -313,14 +314,13 @@ section p {
 .email-placeholder {
     text-transform: lowercase;
     background-color: white;
-    padding: 10px 360px 10px 10px;
+    padding: 10px 330px 10px 10px;
     display: inline-block;
 }
-
 .subscribe a {
     float: right;
 }
-.contact-col-2 a {
+.contact-col-2 button {
     font-family: 'Nova Flat', cursive;
     font-size: 1.8rem;
     line-height: 2.9rem;
@@ -331,12 +331,12 @@ section p {
     color: white;
 }
 
-.contact-col-2 a:hover,
-.contact-col-2 a:focus {
+.contact-col-2 button:hover,
+.contact-col-2 button:focus {
     font-family: 'Nova Flat', cursive;
     font-size: 1.8rem;
     line-height: 2.9rem;
-    padding: 15px 30px;
+    padding: 7px 20px;
     background-color: #186684;
     border: 3px solid #E85B26;
     color: white;
@@ -346,24 +346,97 @@ section p {
     padding-bottom: 10px;
 }
 
-/* FOOTER STYLES */
+.copyright a:hover,
+.copyright a:focus {
+    color: #E85B26;
+}
 
-footer {
+.copyright p {
+    font-family: 'Nova Flat', cursive;
+    font-size: 2rem;
+    line-height: 2.9rem;
     background-color: #1f2022;
     color: #F4F4F4;
     text-align: center;
     padding: 10px 0;
 }
 
-footer a:hover,
-footer a:focus {
-    color: #E85B26;
+input[type=checkbox]{
+    display:none;
 }
 
-footer p {
-    font-family: 'Nova Flat', cursive;
-    font-size: 2rem;
-    line-height: 2.9rem;
-    color: #F4F4F4;
+@media (max-width: 940px) {
+
+    .social-icons {
+        padding: 150px 50px 0 0;
+    }
+
+    .specialize-text,
+    .foot-care-text {
+        margin: 35px 100px 0 35px;
+        width: calc(50% - 135px);
+        padding: 0; 
+    } 
+
+    .giving-back figure {
+        padding-left: 35px;
+    }
+
+    .giving-back-text {
+        margin: 0 35px 0 0;
+        width: calc(70% - 35px);
+    }
+
+    .photo-gallery li {
+        margin: 0 35px 0 35px;
+        width: calc((100% - 210px) / 3);
+    }
+
+    .contact-col-1 {
+        margin-left: 35px;
+    }
+
+    .contact-col-2 {
+        width: calc(43% - 6px);
+    }
+
+    .email-placeholder {
+        padding: 10px 235px 10px 10px;
+        margin-bottom: 10px;
+    }
 }
 
+@media (max-width: 768px) {
+
+    .specialize-text,
+    .foot-care-text,
+    .specialize-img,
+    .foot-care-img {
+        float: none;
+    }
+
+    
+    .icon-menu {
+        left: 150px;
+    }
+
+    .email-placeholder {
+        padding: 10px 150px 10px 10px;
+        margin-bottom: 10px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .fa-bars {
+        visibility: visible;
+    }
+
+
+}

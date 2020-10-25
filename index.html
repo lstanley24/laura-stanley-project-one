@@ -14,6 +14,10 @@
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
         <div class="wrapper">
+
+            <label for="hamburger-menu"><i class="fa fa-bars"></i></label>
+            <input type="checkbox" id="check">
+
             <nav class="primary-menu">
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -42,19 +46,19 @@
     </header>
 
     <main>
-        <section class="section-1 clearfix">
+        <section class="clearfix">
           
-                <div class="specialize-text">
+                <div class="specialize-text clearfix">
 
                     <h2>We specialize in:</h2>
 
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam nihil vero, at vitae dolorem nesciunt, saepe, sed iusto sapiente fugiat rem a eligendi aut dolorum iure accusantium! Eius, sapiente dolorem!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam nihil vero, at vitae dolorem nesciunt, saepe, sed iusto sapiente fugiat rem a eligendi aut dolorum iure accusantium! Eius, sapiente dolorem! lorem</p>
 
                     <a href="#">Read More</a>
 
                 </div>
 
-            <div class="specialize-img">
+            <div class="specialize-img clearfix">
 
                 <figure>
                     <img src="./assets/image-2_2@2x.png" alt="a wall of sneakers on display">
@@ -70,7 +74,7 @@
             
             </div>
 
-            <div class="foot-care-text">
+            <div class="foot-care-text clearfix">
 
                 <h2>Foot care</h2>
 
@@ -104,16 +108,19 @@
             
         </section>
 
-        <section class="connect-with-us clearfix"> 
+        <section class="connect-with-us"> 
         
-            <div class="icon-menu clearfix">
+            <div class="icon-menu">
 
-                <ul class="clearfix">
-                    <li class="shopping-bag"><i class="fas fa-shopping-bag"></i>Products</li>
-                    <li class="community"><i class="fas fa-users"></i>Community</li>
-                    <li class="phone"><i class="fas fa-phone"></i>Reach out</li>
-                </ul>
+                <div class="shopping-bag">
+                    <i class="fas fa-shopping-bag"></i>
+                    <p>Products</p>    
+                 </div>
 
+                 
+                <a href="#">Community<i class="fas fa-users"></i></a>
+                <a href="#">Reach out<i class="fas fa-phone"></i></a>
+                
             </div>
 
         </section>
@@ -128,14 +135,16 @@
                     <li><img src="./assets/image-2@2x.png" alt="a black and white sneaker"></li>
                     <li><img src="./assets/image-3@2x.png" alt="a pair of white and red sneakers"></li>
                     <li><img src="./assets/image-4@2x.png" alt="a white sneaker"></li>
-
+                    
                 </ul>
-
+                
             </div>
-
         </section>
-
-        <section class="contact-section">
+    </main>
+    
+    <footer>
+    
+        <div class="contact-section">
 
             <div class="wrapper clearfix">
 
@@ -143,13 +152,13 @@
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                
-                </nav>
-
-                <div class="contact-text">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        
+                    </nav>
+                    
+                    <div class="contact-text">
 
                     <div class="contact-col-1">
 
@@ -168,20 +177,19 @@
                         <div class="subscribe clearfix">
 
                             <p class="email-placeholder">email address</p>
-                            <a href="#">Subscribe</a>
-                        </div>
-                      
-                    </div>
 
+                            <button>Subscribe</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
 
-    <footer>
+       <div class="copyright">
 
-
-        <p>Copyright © 2020 Juno College | <a href="http://junocollege.com/">Created at Juno College</a></p>
+            <p>Copyright © 2020 Juno College | <a href="http://junocollege.com/">Created at Juno College</a></p>
+    
+        </div>
     
     </footer>
 </body>
