@@ -60,13 +60,13 @@ figure {
     left:0;
 }
 
-/* header i {
+.mobile-menu i {
     position: absolute;
-    top: 50px;
-    right: 50px;
-    font-size: 2rem;
+    top: 30px;
+    right: 30px;
+    font-size: 4rem;
     visibility: hidden;
-} */
+}
 
 h1 {
     font-family: 'Nova Flat', cursive;
@@ -172,18 +172,23 @@ header a:focus {
 
 /* SPECIALIZE SECTION */
 
-.specialize-text,
-.foot-care-text {
-    float: left;
-    padding-top: 120px;
-    margin: 0 50px 0 100px;
+
+.specialize-text {
+    float: right;
+    margin: 152px 50px 152px 100px;
     width: calc(50% - 150px);
 }
 
 .specialize-img {
-    float: left;
+    float: right;
     width: 50%;
 }    
+
+.foot-care-text {
+    float: left;
+    margin: 150px 50px 150px 100px;
+    width: calc(50% - 150px);
+}
 
 .foot-care-img {
     float: left;
@@ -195,6 +200,7 @@ header a:focus {
 .giving-back {
     background-color: #F4F4F4;
     padding: 80px 0 80px 0;
+    clear:both;
 }
 
 .giving-back figure {
@@ -246,7 +252,6 @@ header a:focus {
     text-align: center;
     font-size: 2rem;
     font-family: 'Catamaran', sans-serif;
-    text-align: center;
     font-weight: 600;
     margin: 0 20px;
 }
@@ -285,7 +290,6 @@ header a:focus {
     display: inline-block;
     margin: 0 20px;
     padding-top: 45px;
-    font-size: ;
 }
 
 .secondary-menu a {
@@ -369,9 +373,6 @@ header a:focus {
     padding: 10px 0;
 }
 
-input[type=checkbox]{
-    display:none;
-}
 
 /* RESPONSIVE */
 
@@ -383,7 +384,7 @@ input[type=checkbox]{
 
     .specialize-text,
     .foot-care-text {
-        margin: 35px 100px 0 35px;
+        margin: 35px 100px 24px 35px;
         width: calc(50% - 135px);
         padding: 0; 
     } 
@@ -423,14 +424,20 @@ input[type=checkbox]{
 
 @media (max-width: 768px) {
 
-    .specialize-text,
-    .foot-care-text,
-    .specialize-img,
-    .foot-care-img {
-        float: none;
+   .specialize-text {
+        margin: 5px 5px 15px 35px;
+        width: calc(50% - 40px);
     }
 
-    
+    .foot-care-text {
+        margin: 5px 35px 15px 5px;
+        width: calc(50% - 40px);
+    }
+
+    section p {
+        padding-bottom: 10px;
+    }    
+
     .icon-menu {
         left: 150px;
     }
@@ -439,19 +446,138 @@ input[type=checkbox]{
         padding: 10px 150px 10px 10px;
         margin-bottom: 10px;
     }
-
-
 }
 
 @media (max-width: 480px) {
 
+    header {
+        background-position: 30%;
+    }
+    
+    header ul {
+        display: none; 
+    }
+
     h1 {
-        font-size: 2rem;
+        font-size: 8rem; 
+        padding: 20px 0 20px 10px;
+        width: 320px;   
     }
 
-    .fa-bars {
+    .heading-container {
+        float: none;
+        position: relative;
+        left: 80px;
+        margin-top: 275px;
+    } 
+
+    .mobile-menu i {
         visibility: visible;
+        color: #186684;
     }
 
+    .specialize-text,
+    .foot-care-text {
+        width: 90%;
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+        padding: 50px 0 50px 0;
+    }
 
+    .specialize-text p,
+    .foot-care-text p {
+        padding-bottom: 25px;
+    }
+
+    .specialize-img,
+    .foot-care-img {
+        width: 100%;
+        float: none;
+    }
+    
+    .giving-back {
+        padding: 50px 0 50px 0;
+    }
+    
+    .giving-back figure {
+        float: none;
+        width: 90%;
+    }
+    
+    .giving-back-text {
+        width: 90%;
+        padding: 20px 0 20px 0;
+        text-align: center;
+    }
+    
+    .giving-back-text p {
+        padding-bottom: 25px
+    }
+    
+    .giving-back-text a {
+        padding: 10px 50px;
+    }
+    
+    .connect-with-us {
+        background-size: cover;
+        background-position: 10%;
+        height: 60vh;
+    }
+    
+    .icon-menu {
+        display: inline-block;
+        padding: 35px;
+        left: 150px;
+        top: 35px;
+    }
+
+    .shopping-bag,
+    .community,
+    .reach-out {
+        display: block;
+        margin: 10px;
+    }
+    
+    .mobile-hidden-img {
+        display: none;
+    }
+
+    .photo-gallery h2 {
+        font-size: 4rem;
+    }
+
+    .photo-gallery li {
+
+        margin-right: 5px;
+        width: calc((80% - 10px) / 2);
+        float: left;
+        padding-bottom: 25px;
+    }
+
+    .contact-section h2 {
+        padding-bottom: 20px;
+    }
+
+    .contact-col-1 {
+        float: none;
+        text-align: center;
+        margin: 0;
+    }
+
+    .contact-col-2 {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .email-placeholder {
+        padding: 10px 0 0 10px;
+        display: inline-block;
+        width: 80%;
+    }
+    
+    .contact-col-2 button {
+        width: 80%;
+    }
 }

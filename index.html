@@ -13,26 +13,24 @@
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <header>
         <div class="wrapper">
-
-            <label for="hamburger-menu"><i class="fa fa-bars"></i></label>
-            <input type="checkbox" id="check">
-
+            <div class="mobile-menu">
+                <label for="check" aria-label="click to access main menu"><i aria-hidden="true" class="fa fa-bars"></i></label>
+            </div>
             <nav class="primary-menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="primary-menu"><a href="#">Home</a></li>
+                    <li class="primary-menu"><a href="#">About</a>
+                    <li class="primary-menu"><a href="#">Blog</a></li>
+                    <li class="primary-menu"><a href="#">Contact</a></li>
                 </ul>
             </nav>
             
             <ul class="social-icons clearfix">
-                <li><i class="fab fa-instagram"></i></li>
-                <li><i class="fab fa-facebook-f"></i></li>
-                <li><i class="fab fa-snapchat-ghost"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
+                <li><a href="#" aria-label="Follow us on Instagram"><i aria-hidden="true" class="fab fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="Follow us on Facebook"><i aria-hidden="true" class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" aria-label="Follow us on Snapchat"><i aria-hidden="true" class="fab fa-snapchat-ghost"></i></a></li>
+                <li><a href="#" aria-label="Follow us on Twitter"><i aria-hidden="true" class="fab fa-twitter"></i></a></li>
             </ul>
-
             <div class="heading-container clearfix">
                 <h1>Foot Forward</h1>
             </div>
@@ -41,18 +39,17 @@
 
     <main>
         <section class="clearfix">
-            <div class="specialize-text clearfix">
-                <h2>We specialize in:</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam nihil vero, at vitae dolorem nesciunt, saepe, sed iusto sapiente fugiat rem a eligendi aut dolorum iure accusantium! Eius, sapiente dolorem! lorem</p>
-                <a href="#">Read More</a>
-            </div>
-
             <div class="specialize-img">
                 <figure>
                     <img src="./assets/image-2_2@2x.png" alt="a wall of sneakers on display">
                 </figure>
             </div>
-
+            <div class="specialize-text clearfix">
+                <h2>We specialize in:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam nihil vero, at vitae dolorem nesciunt, saepe, sed iusto sapiente fugiat rem a eligendi aut dolorum iure accusantium! Eius, sapiente dolorem! lorem</p>
+                <a href="#">Read More</a>
+            </div>
+            
             <div class="foot-care-img">
                 <figure>
                     <img src="./assets/image-2-copy@2x.png" alt="a person throwing a pink sneaker into the air">
@@ -84,15 +81,15 @@
         <section class="connect-with-us"> 
             <div class="icon-menu">
                 <div class="shopping-bag">
-                    <i class="fas fa-shopping-bag"></i>
+                    <a href="#" aria-label="Visit our products page"><i aria-hidden="true" class="fas fa-shopping-bag"></i></a>
                     <p>Products</p>    
                  </div>
                 <div class="community">
-                    <i class="fas fa-users"></i>
+                    <a href="#" aria-label="Join our community"><i aria-hidden="true" class="fas fa-users"></i></a>
                     <p>Community</p>
                 </div>
                 <div class="reach-out">
-                    <i class="fas fa-phone"></i>
+                    <a href="#" aria-label="Get in touch with us"><i aria-hidden="true"class="fas fa-phone"></i></a>
                     <p>Reach out</p>
                 </div>
             </div>
@@ -104,7 +101,7 @@
                 <ul class="clearfix">
                     <li><img src="./assets/image-2@2x.png" alt="a black and white sneaker"></li>
                     <li><img src="./assets/image-3@2x.png" alt="a pair of white and red sneakers"></li>
-                    <li><img src="./assets/image-4@2x.png" alt="a white sneaker"></li>
+                    <li><span class="mobile-hidden-img"><img src="./assets/image-4@2x.png" alt="a white sneaker"></span></li>
                 </ul>
             </div>
         </section>
