@@ -8,6 +8,16 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+/* COLOUR PALLETTE */
+
+/* Pale lilac: #E3E4EA89
+Reddish orange: #E85B26
+Light grey: #F4F4F4
+Light navy: #186684
+Dark grey: #1F2022 */
+
+/* GENERAL STYLES */
+
 * { 
     padding: 0;
     margin: 0;
@@ -50,18 +60,27 @@ figure {
     left:0;
 }
 
-header i {
+/* header i {
     position: absolute;
     top: 50px;
     right: 50px;
     font-size: 2rem;
     visibility: hidden;
+} */
+
+h1 {
+    font-family: 'Nova Flat', cursive;
+    font-size: 10rem;
+    color: #186684;
+    background-color: #E3E4EA89;
+    width: 380px;
 }
 
 h2 {
     font-family: 'Nova Flat', cursive;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #186684;
+    padding-bottom: 25px;
 }
 
 p {
@@ -69,6 +88,23 @@ p {
     font-size: 2rem;
     line-height: 2.9rem;
     color: #1F2022;
+}
+
+section p {
+    padding-bottom: 35px;
+}
+
+.giving-back-text a,
+.foot-care-text a,
+.specialize-text a {
+    font-family: 'Nova Flat', cursive;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    text-transform: uppercase;
+    color: #186684;
+    padding: 10px 20px;
+    margin: 0;
+    border: 3px solid #E85B26;
 }
 
 .wrapper {
@@ -114,35 +150,6 @@ header a:focus {
     float: right;
     margin-top: 250px;
 }   
-
-h1 {
-    font-family: 'Nova Flat', cursive;
-    font-size: 10rem;
-    color: #186684;
-    background-color: #E3E4EA89;
-    width: 380px;
-}
-
-h2 {
-    padding-bottom: 25px
-}
-
-section p {
-    padding-bottom: 35px;
-}
-
-.giving-back-text a,
-.foot-care-text a,
-.specialize-text a {
-    font-family: 'Nova Flat', cursive;
-    font-size: 1.8rem;
-    line-height: 2.9rem;
-    text-transform: uppercase;
-    color: #186684;
-    padding: 10px 25px;
-    margin: 0;
-    border: 3px solid #E85B26;
-}
 
 /* SOCIAL ICONS */
 
@@ -214,34 +221,34 @@ section p {
 
 .icon-menu {
     background-color: #F4F4F4;
-    padding: 50px 0 50px 0;
+    padding: 100px 50px 50px 50px;
     position: relative;
-    left: 300px;
-    top: 90px;
+    left: 500px;
+    top: 150px;
     display: inline;
-}
-
-.icon-menu a {
-    font-size: 2rem;
-    font-family: 'Catamaran', sans-serif;
-    text-align: center;
-    font-weight: 600;
-    margin: 0 20px;
-    display: inline-block;
 }
 
 .icon-menu i {
     font-size: 3rem;
     color: #E85B26;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
     text-align: center;
-    display: inline-block
 }
 
-.shopping-bag {
-    width: 50px;
+.icon-menu p {
+    color: #186684;
+}
 
-
+.shopping-bag,
+.community,
+.reach-out {
+    display: inline-block;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Catamaran', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    margin: 0 20px;
 }
 
 /* PHOTO GALLERY STYLES */
@@ -252,9 +259,9 @@ section p {
 }
 
 .photo-gallery li {
-    margin-right: 20px;
+    margin-right: 30px;
     float: left;
-    width: calc((100% - 60px) / 3);
+    width: calc((100% - 90px) / 3);
     padding-bottom: 80px;
 }
 
@@ -262,7 +269,7 @@ section p {
 
 .contact-text h2 {
     font-family: 'Nova Flat', cursive;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #E85B26;
 }
 
@@ -278,11 +285,12 @@ section p {
     display: inline-block;
     margin: 0 20px;
     padding-top: 45px;
+    font-size: ;
 }
 
 .secondary-menu a {
     font-family: 'Nova Flat', cursive;
-    font-style: 2.5rem;
+    font-size: 2rem;
     line-height: 2.9rem;
     text-align: center;
 }
@@ -365,6 +373,8 @@ input[type=checkbox]{
     display:none;
 }
 
+/* RESPONSIVE */
+
 @media (max-width: 940px) {
 
     .social-icons {
@@ -385,6 +395,11 @@ input[type=checkbox]{
     .giving-back-text {
         margin: 0 35px 0 0;
         width: calc(70% - 35px);
+    }
+
+    .icon-menu {
+        left: 200px;
+        top: 150px;
     }
 
     .photo-gallery li {
